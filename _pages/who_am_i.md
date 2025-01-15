@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Getting Started
-permalink: /getting-started/
+title: Who Am I?
+permalink: /who-am-i/
 ---
 
 <div id="search-container">
