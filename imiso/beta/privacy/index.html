@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="What iMiso Beta stores, where it lives, who can see it, and how to have it deleted.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>iMiso Beta Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
+<style>
+/* Layout: one readable column, a short summary card up top, plain sections below. Dark first, like the app. */
+:root {
+  --bg: #000000;
+  --card: #1c1c1e;
+  --line: rgba(255, 255, 255, 0.09);
+  --text: #ffffff;
+  --muted: #a3a3a3;
+  --faint: #6b6b6b;
+  --good: #73cc8c;
+  --display: "Plus Jakarta Sans", -apple-system, "SF Pro Display", system-ui, sans-serif;
+  --body: -apple-system, "SF Pro Text", system-ui, "Segoe UI", Roboto, sans-serif;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f6f6f4; --card: #ffffff; --line: rgba(0, 0, 0, 0.09);
+    --text: #141414; --muted: #555555; --faint: #8a8a8a; --good: #1e8a4c;
+    color-scheme: light;
+  }
+}
+:root[data-theme="light"] {
+  --bg: #f6f6f4; --card: #ffffff; --line: rgba(0, 0, 0, 0.09);
+  --text: #141414; --muted: #555555; --faint: #8a8a8a; --good: #1e8a4c;
+  color-scheme: light;
+}
+body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--body); font-size: 16px; line-height: 1.6; }
+.page {
+  max-width: 680px; margin: 0 auto;
+  padding-block: 48px 72px;
+  padding-left: max(20px, env(safe-area-inset-left, 0px));
+  padding-right: max(20px, env(safe-area-inset-right, 0px));
+}
+.eyebrow { font: 700 12px/1 var(--display); letter-spacing: 0.16em; text-transform: uppercase; color: var(--faint); }
+h1 { font: 800 clamp(32px, 6vw, 44px)/1.1 var(--display); letter-spacing: -0.02em; margin: 12px 0 10px; text-wrap: balance; }
+.dates { color: var(--muted); font-size: 14px; margin: 0; }
+.intro { color: var(--muted); margin: 24px 0 0; }
+.summary { background: var(--card); border-radius: 22px; padding: 22px 24px; margin: 32px 0 8px; }
+.summary h2 { margin-top: 0; }
+.summary ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; }
+.summary li { display: grid; grid-template-columns: 20px 1fr; gap: 10px; }
+.summary li::before { content: "•"; color: var(--good); font-weight: 800; }
+h2 { font: 700 20px/1.3 var(--display); margin: 40px 0 10px; text-wrap: balance; }
+h3 { font: 700 16px/1.4 var(--display); margin: 22px 0 4px; }
+p, li { color: var(--text); }
+p { margin: 0 0 12px; }
+section ul { padding-left: 20px; margin: 0 0 12px; }
+section li { margin-bottom: 6px; }
+.muted { color: var(--muted); }
+strong { font-weight: 650; }
+.contact { font-family: var(--display); font-weight: 700; user-select: all; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0 0; }
+footer { color: var(--faint); font-size: 13px; margin-top: 16px; }
+a { color: var(--text); text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--good); outline-offset: 2px; border-radius: 4px; }
+</style>
+
+</head>
+<body>
+<main class="page">
+  <div class="eyebrow">iMiso Beta</div>
+  <h1>Privacy Policy</h1>
+  <p class="dates">Effective November 2, 2026</p>
+  <p class="intro">iMiso is a small app for couples, made by Allan Zheng, an independent developer. It's currently a test version, iMiso Beta, offered to invited friends through Apple's TestFlight. This policy explains what the app keeps, where, who can see it, and how to have it deleted.</p>
+
+  <div class="summary">
+    <h2>The short version</h2>
+    <ul>
+      <li>What you put in iMiso is shared with your partner, and stored in Apple's iCloud so both of your phones can see it.</li>
+      <li>The developer can see what's stored in iCloud, and only looks when it's needed to fix a problem or when you ask.</li>
+      <li>Health information is limited to daily totals and scores, and is only used to show to you and your partner.</li>
+      <li>No ads, no analytics, no tracking, and your data is never sold.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>What iMiso stores in iCloud</h2>
+    <p>These are kept in the app's iCloud database, run by Apple, so your partner's phone can show them.</p>
+    <h3>You and your household</h3>
+    <ul>
+      <li>Your first name, the emoji you pick, and a photo if you add one.</li>
+      <li>An anonymous identifier Apple provides for your iCloud account. It isn't your Apple ID email or phone number.</li>
+      <li>Your household's name and its 6-character join code.</li>
+    </ul>
+    <h3>What you add</h3>
+    <ul>
+      <li>To-dos and when they're checked off; hugs, notes and nudges; meal plans and shopping lists.</li>
+      <li>Fantasy settings, rules and weekly results.</li>
+    </ul>
+    <h3>Health, if you connect it</h3>
+    <ul>
+      <li>From Apple Health, daily totals only: time asleep, bedtime and wake time, steps, active calories, exercise minutes and workouts, resting heart rate and heart rate variability.</li>
+      <li>From Whoop or Oura, if you connect one: its daily scores, such as recovery or readiness, sleep score, and strain or activity.</li>
+      <li>Never individual heart-rate readings, locations, or medical records.</li>
+    </ul>
+    <h3>Calendars, if you connect them</h3>
+    <ul>
+      <li>Your events from about a month ago to four months ahead (title, time, location and calendar name), so your partner can see them. Calendars and events you hide aren't shared.</li>
+      <li>If you add a work calendar link: only the start and end times of your meetings, so your partner knows when you're busy. Meeting titles aren't shared.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What stays only on your phone</h2>
+    <ul>
+      <li>Sign-ins for Google, Whoop and Oura, and your work calendar link. These are kept in the iPhone's Keychain.</li>
+      <li>Weekly backups of your household's data, saved as a file on your iPhone (Files › On My iPhone › iMiso). A backup only leaves your phone if you share it.</li>
+      <li>Your own preferences, such as how Today is arranged.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Who can see your information</h2>
+    <ul>
+      <li><strong>Your partner</strong>, the other member of your household.</li>
+      <li><strong>The developer.</strong> During the beta, data is kept in a shared iCloud database that the developer can view with Apple's tools. It's only looked at to fix problems or when you ask.</li>
+      <li><strong>No one else through the app.</strong> The app only shows each household its own data. Because the beta uses a shared database, someone who knew your join code and had the technical skill could read your household's data, so keep your code between you and your partner.</li>
+      <li><strong>Apple</strong> runs iCloud and TestFlight. TestFlight sends the developer crash reports, basic device information, and any feedback or screenshots you choose to send. <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a> covers those services.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Services iMiso connects to</h2>
+    <p>Only if you connect them, and always directly from your phone.</p>
+    <ul>
+      <li><strong>Apple Health:</strong> read only. iMiso never writes to Apple Health.</li>
+      <li><strong>Google Calendar:</strong> read-only access to your calendars. iMiso never creates, changes or deletes events. Its use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
+      <li><strong>Whoop and Oura:</strong> read access to your daily scores.</li>
+      <li><strong>Your work calendar link</strong> (from Outlook or Google): your phone downloads it to find your meetings.</li>
+    </ul>
+    <p>iMiso doesn't send your data to these services, apart from the requests needed to read from them. You can disconnect any of them in the app's Settings, and remove iMiso's access in iPhone Settings › Health › Data Access & Devices, or in your Google, Whoop or Oura account.</p>
+  </section>
+
+  <section>
+    <h2>What iMiso doesn't do</h2>
+    <ul>
+      <li>No advertising, analytics or tracking tools.</li>
+      <li>No selling or renting your data, and no sharing it with data brokers or advertisers.</li>
+      <li>Health information is never used for advertising or marketing.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Keeping and deleting your data</h2>
+    <ul>
+      <li>Your data is kept until it's deleted. Leaving your household in Settings removes it from that iPhone, but doesn't delete it from iCloud.</li>
+      <li>To have your household's data deleted from iCloud, email the developer at the address below. It will be deleted within 30 days.</li>
+      <li>When the beta ends, its data will be deleted.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Security</h2>
+    <p>Apple encrypts iCloud data in transit and on its servers, and sign-ins are kept in the iPhone's Keychain. No system is perfectly secure, but if anything ever exposed your information, you'd be told promptly.</p>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>iMiso is meant for adults and isn't directed at children under 13.</p>
+  </section>
+
+  <section>
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the date at the top will change, and testers will hear about it in the TestFlight notes for the next build.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions or deletion requests: <span class="contact">azthedeveloper@gmail.com</span></p>
+  </section>
+
+  <hr>
+  <footer>iMiso Beta · Allan Zheng</footer>
+</main>
+</body>
+</html>
