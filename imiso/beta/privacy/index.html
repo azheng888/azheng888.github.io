@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="What iMiso Beta stores, where it lives, who can see it, and how to have it deleted.">
+<meta name="description" content="What iMiso Beta stores, where it lives, who can see it, and how to delete it.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <title>iMiso Beta Privacy Policy</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,27 +70,33 @@ a:focus-visible { outline: 2px solid var(--good); outline-offset: 2px; border-ra
 <main class="page">
   <div class="eyebrow">iMiso Beta</div>
   <h1>Privacy Policy</h1>
-  <p class="dates">Effective November 2, 2026</p>
-  <p class="intro">iMiso is a small app for couples, made by Allan Zheng, an independent developer. It's currently a test version, iMiso Beta, offered to invited friends through Apple's TestFlight. This policy explains what the app keeps, where, who can see it, and how to have it deleted.</p>
+  <p class="dates">Effective November 3, 2026</p>
+  <p class="intro">iMiso is a small app for couples, made by Allan Zheng, an independent developer. It's currently a test version, iMiso Beta, offered to invited friends through Apple's TestFlight. This policy explains what the app keeps, where, who can see it, and how to delete it.</p>
 
   <div class="summary">
     <h2>The short version</h2>
     <ul>
-      <li>What you put in iMiso is shared with your partner, and stored in Apple's iCloud so both of your phones can see it.</li>
-      <li>The developer can see what's stored in iCloud, and only looks when it's needed to fix a problem or when you ask.</li>
-      <li>Health information is limited to daily totals and scores, and is only used to show to you and your partner.</li>
+      <li>What you put in iMiso is shared with your partner, and stored on iMiso's server (hosted by Supabase in the United States) so both of your phones can see it.</li>
+      <li>The server only lets the two members of a household see that household. The developer can also see stored data, and only looks when it's needed to fix a problem or when you ask.</li>
+      <li>Health information is limited to daily totals and scores. Money information is only there if you connect your banks.</li>
+      <li>You can delete your account and data at any time in Settings.</li>
       <li>No ads, no analytics, no tracking, and your data is never sold.</li>
     </ul>
   </div>
 
   <section>
-    <h2>What iMiso stores in iCloud</h2>
-    <p>These are kept in the app's iCloud database, run by Apple, so your partner's phone can show them.</p>
+    <h2>Your account</h2>
+    <p>You sign in with Apple. iMiso receives an anonymous identifier for your Apple ID and the email address Apple provides: your real email, or a private relay address if you choose Hide My Email. iMiso never sees your Apple ID password. The email is only used to identify your account; iMiso doesn't send you email.</p>
+  </section>
+
+  <section>
+    <h2>What iMiso stores on its server</h2>
+    <p>These are kept so your partner's phone can show them.</p>
     <h3>You and your household</h3>
     <ul>
       <li>Your first name, the emoji you pick, and a photo if you add one.</li>
-      <li>An anonymous identifier Apple provides for your iCloud account. It isn't your Apple ID email or phone number.</li>
       <li>Your household's name and its 6-character join code.</li>
+      <li>Your phone's notification address (an Apple push token) and your notification settings, so hugs and check-offs reach you the way you chose.</li>
     </ul>
     <h3>What you add</h3>
     <ul>
@@ -108,12 +114,17 @@ a:focus-visible { outline: 2px solid var(--good); outline-offset: 2px; border-ra
       <li>Your events from about a month ago to four months ahead (title, time, location and calendar name), so your partner can see them. Calendars and events you hide aren't shared.</li>
       <li>If you add a work calendar link: only the start and end times of your meetings, so your partner knows when you're busy. Meeting titles aren't shared.</li>
     </ul>
+    <h3>Money, if you connect your banks</h3>
+    <ul>
+      <li>Through SimpleFIN Bridge: your accounts' names, institutions and balances, and transactions (date, amount, description and the category you or the app give it).</li>
+      <li>Never your bank logins. You connect your banks on SimpleFIN's site; iMiso only keeps SimpleFIN's read-only access link, on your phone.</li>
+    </ul>
   </section>
 
   <section>
     <h2>What stays only on your phone</h2>
     <ul>
-      <li>Sign-ins for Google, Whoop and Oura, and your work calendar link. These are kept in the iPhone's Keychain.</li>
+      <li>Your iMiso sign-in, and sign-ins for Google, Whoop, Oura and SimpleFIN, and your work calendar link. These are kept in the iPhone's Keychain.</li>
       <li>Weekly backups of your household's data, saved as a file on your iPhone (Files › On My iPhone › iMiso). A backup only leaves your phone if you share it.</li>
       <li>Your own preferences, such as how Today is arranged.</li>
     </ul>
@@ -122,10 +133,10 @@ a:focus-visible { outline: 2px solid var(--good); outline-offset: 2px; border-ra
   <section>
     <h2>Who can see your information</h2>
     <ul>
-      <li><strong>Your partner</strong>, the other member of your household.</li>
-      <li><strong>The developer.</strong> During the beta, data is kept in a shared iCloud database that the developer can view with Apple's tools. It's only looked at to fix problems or when you ask.</li>
-      <li><strong>No one else through the app.</strong> The app only shows each household its own data. Because the beta uses a shared database, someone who knew your join code and had the technical skill could read your household's data, so keep your code between you and your partner.</li>
-      <li><strong>Apple</strong> runs iCloud and TestFlight. TestFlight sends the developer crash reports, basic device information, and any feedback or screenshots you choose to send. <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a> covers those services.</li>
+      <li><strong>Your partner</strong>, the other member of your household. A household holds two people; once your partner joins, the join code no longer lets anyone else in.</li>
+      <li><strong>No one else through the app.</strong> The server itself checks every request and only returns a household's data to its members.</li>
+      <li><strong>The developer</strong> can view stored data with Supabase's tools. It's only looked at to fix problems or when you ask.</li>
+      <li><strong>Service providers</strong> that run parts of iMiso for the developer: Supabase hosts the server and database (on Amazon Web Services in the United States), and Apple provides Sign in with Apple, push notifications and TestFlight. TestFlight sends the developer crash reports, basic device information, and any feedback or screenshots you choose to send. See <a href="https://supabase.com/privacy">Supabase's privacy policy</a> and <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</li>
     </ul>
   </section>
 
@@ -136,9 +147,10 @@ a:focus-visible { outline: 2px solid var(--good); outline-offset: 2px; border-ra
       <li><strong>Apple Health:</strong> read only. iMiso never writes to Apple Health.</li>
       <li><strong>Google Calendar:</strong> read-only access to your calendars. iMiso never creates, changes or deletes events. Its use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
       <li><strong>Whoop and Oura:</strong> read access to your daily scores.</li>
+      <li><strong>SimpleFIN Bridge:</strong> read-only access to the bank accounts you choose there.</li>
       <li><strong>Your work calendar link</strong> (from Outlook or Google): your phone downloads it to find your meetings.</li>
     </ul>
-    <p>iMiso doesn't send your data to these services, apart from the requests needed to read from them. You can disconnect any of them in the app's Settings, and remove iMiso's access in iPhone Settings › Health › Data Access & Devices, or in your Google, Whoop or Oura account.</p>
+    <p>iMiso doesn't send your data to these services, apart from the requests needed to read from them. You can disconnect any of them in the app's Settings, and remove iMiso's access in iPhone Settings › Health › Data Access &amp; Devices, or in your Google, Whoop, Oura or SimpleFIN account.</p>
   </section>
 
   <section>
@@ -153,15 +165,17 @@ a:focus-visible { outline: 2px solid var(--good); outline-offset: 2px; border-ra
   <section>
     <h2>Keeping and deleting your data</h2>
     <ul>
-      <li>Your data is kept until it's deleted. Leaving your household in Settings removes it from that iPhone, but doesn't delete it from iCloud.</li>
-      <li>To have your household's data deleted from iCloud, email the developer at the address below. It will be deleted within 30 days.</li>
+      <li><strong>Delete account</strong> (Settings › Household) deletes your account right away, along with your profile, health and calendar data, and hugs and notes to or from you. Shared things like to-dos, shopping lists, meals and money stay with your partner; if your partner has already left or deleted their account, everything in the household is deleted.</li>
+      <li><strong>Leave household</strong> removes you from it and keeps everything for your partner. <strong>Sign out</strong> keeps your account for next time.</li>
+      <li>You can also email the developer at the address below to have your data deleted, within 30 days.</li>
+      <li>Deleted data may remain in the server's routine backups for up to 30 days before it's gone for good.</li>
       <li>When the beta ends, its data will be deleted.</li>
     </ul>
   </section>
 
   <section>
     <h2>Security</h2>
-    <p>Apple encrypts iCloud data in transit and on its servers, and sign-ins are kept in the iPhone's Keychain. No system is perfectly secure, but if anything ever exposed your information, you'd be told promptly.</p>
+    <p>Everything travels to and from the server encrypted, and Supabase encrypts the database on its disks. Access is checked by the server for every request, and sign-ins are kept in the iPhone's Keychain. No system is perfectly secure, but if anything ever exposed your information, you'd be told promptly.</p>
   </section>
 
   <section>
