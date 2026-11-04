@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>Join on Miso</title>
+<style>
+:root { --bg: #000; --card: #1c1c1e; --text: #fff; --muted: #a3a3a3; color-scheme: dark; }
+@media (prefers-color-scheme: light) {
+  :root { --bg: #f6f6f4; --card: #fff; --text: #141414; --muted: #555; color-scheme: light; }
+}
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.5 -apple-system, "SF Pro Text", system-ui, sans-serif; }
+main { max-width: 480px; margin: 0 auto; padding: 72px 16px; text-align: center; }
+h1 { font-size: 32px; margin: 0 0 24px; letter-spacing: -0.02em; }
+.code { font: 700 44px/1 ui-monospace, "SF Mono", Menlo, monospace; letter-spacing: 0.15em;
+  background: var(--card); border-radius: 16px; padding: 24px 16px; margin: 0 0 24px; }
+p { color: var(--muted); margin: 0 0 12px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Join on Miso</h1>
+  <div class="code" id="code"></div>
+  <p>Open this link on your iPhone with Miso installed, or enter the code in the app.</p>
+</main>
+<script>
+  const code = (new URLSearchParams(location.search).get("code") || "").toUpperCase().replace(/[^A-Z0-9]/g, "").slice(0, 6);
+  const box = document.getElementById("code");
+  if (code) { box.textContent = code; } else { box.remove(); }
+</script>
+</body>
+</html>
