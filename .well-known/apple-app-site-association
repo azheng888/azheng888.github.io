@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["9G8GHD7W2U.com.allanzheng.imiso"],
+        "components": [{ "/": "/imiso/join/*", "comment": "Miso invites: open the app and join the household" }]
+      }
+    ]
+  }
+}
